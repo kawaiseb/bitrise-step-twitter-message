@@ -12,7 +12,7 @@ title: |-
 summary: |
   Send message on twitter
 description: |
-  This step can send message on twitter.
+  This step is used to send message on twitter.
 website: https://github.com/kawaiseb/bitrise-step-twitter-message
 source_code_url: https://github.com/kawaiseb/bitrise-step-twitter-message
 support_url: https://github.com/kawaiseb/bitrise-step-twitter-message/issues
@@ -65,12 +65,24 @@ toolkit:
 
 inputs:
   - consumer_key:
+    opts:
+      title: "Consumer Key (API Key)"
+      summary: Your application's Consumer Key and Secret are used to 
+      authenticate requests to the Twitter Platform.
       is_required: true
   - consumer_secret:
+    opts:
+      title: "Consumer Secret (API Secret)"
       is_required: true
   - access_token_key:
+    opts:
+      title: "Access Token"
+      summary: This access token can be used to make API requests on your 
+      own account's behalf. Do not share your access token secret with anyone.
       is_required: true
   - access_token_secret:
+    otps:
+      title: "Access Token Secret"
       is_required: true
   - screen_name:
     opts:
@@ -83,7 +95,6 @@ inputs:
         historical accounts may exist with longer names
       is_expand: true
       is_required: true
-      value_options: []
   - status:
       is_required: true
 
