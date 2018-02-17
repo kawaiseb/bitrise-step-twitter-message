@@ -64,27 +64,29 @@ toolkit:
 
 
 inputs:
-  - consumer_key:
+  - consumer_key: $consumer_key
     opts:
-      title: "Consumer Key (API Key)"
-      summary: Your application's Consumer Key and Secret are used to 
-      authenticate requests to the Twitter Platform.
+      title: Consumer Key (API Key)
+      summary: Your application's Consumer Key and Secret are used to authenticate requests to the Twitter Platform.
       is_required: true
-  - consumer_secret:
+
+  - consumer_secret: $consumer_secret
     opts:
-      title: "Consumer Secret (API Secret)"
+      title: Consumer Secret (API Secret)
       is_required: true
-  - access_token_key:
+ 
+  - access_token_secret: $access_token_secret
     opts:
-      title: "Access Token"
-      summary: This access token can be used to make API requests on your 
-      own account's behalf. Do not share your access token secret with anyone.
+      title: Access Token Secret
       is_required: true
-  - access_token_secret:
-    otps:
-      title: "Access Token Secret"
+
+  - access_token_key: $access_token_key
+    opts:
+      title: Access Token
+      summary: This access token can be used to make API requests on your own account's behalf. Do not share your access token secret with anyone.
       is_required: true
-  - screen_name:
+
+  - screen_name: $screen_name
     opts:
       title: "Screen name where to post"
       summary: Summary. No more than 2-3 sentences.
