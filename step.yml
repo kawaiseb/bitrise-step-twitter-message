@@ -64,17 +64,28 @@ toolkit:
 
 
 inputs:
-  - example_step_input: Default Value - you can leave this empty if you want to
+  - consumer_key:
+      is_required: true
+  - consumer_secret:
+      is_required: true
+  - access_token_key:
+      is_required: true
+  - access_token_secret:
+      is_required: true
+  - screen_name:
     opts:
-      title: "Example Step Input"
+      title: "Screen name where to post"
       summary: Summary. No more than 2-3 sentences.
       description: |
-        Description of this input.
-
-        Can be Markdown formatted text.
+        The screen name, handle, or alias that this user identifies themselves with. 
+        screen_names are unique but subject to change. Use id_str as a user identifier 
+        whenever possible. Typically a maximum of 15 characters long, but some 
+        historical accounts may exist with longer names
       is_expand: true
       is_required: true
       value_options: []
+  - status:
+      is_required: true
 
 outputs:
   - EXAMPLE_STEP_OUTPUT:
