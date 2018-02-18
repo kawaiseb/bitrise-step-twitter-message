@@ -1,6 +1,7 @@
 #!/bin/bash
 set -ex
 
+echo $BLOP_BLOP
 echo "This is the value specified for the input 'example_step_input': ${example_step_input}"
 
 #

@@ -99,7 +99,9 @@ inputs:
       is_expand: true
       is_required: true
   - status:
+    opts:
       title: Text to post on twitter
+      summary:
       is_required: true
 
 outputs:
