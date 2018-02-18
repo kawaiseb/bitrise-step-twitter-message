@@ -43,6 +43,7 @@ host_os_tags:
 # https://github.com/bitrise-io/bitrise/blob/master/_docs/step-development-guideline.md
 type_tags:
   - utility
+  - notification
 
 is_requires_admin_user: true
 is_always_run: false
@@ -88,8 +89,8 @@ inputs:
 
   - screen_name: $screen_name
     opts:
-      title: "Screen name where to post"
-      summary: Summary. No more than 2-3 sentences.
+      title: Screen name where to post
+      summary:
       description: |
         The screen name, handle, or alias that this user identifies themselves with. 
         screen_names are unique but subject to change. Use id_str as a user identifier 
@@ -98,14 +99,7 @@ inputs:
       is_expand: true
       is_required: true
   - status:
+      title: Text to post on twitter
       is_required: true
 
 outputs:
-  - EXAMPLE_STEP_OUTPUT:
-    opts:
-      title: "Example Step Output"
-      summary: Summary. No more than 2-3 sentences.
-      description: |
-        Description of this output.
-
-        Can be Markdown formatted text.
