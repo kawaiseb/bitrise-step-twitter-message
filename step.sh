@@ -2,17 +2,12 @@
 set -ex
 
 THIS_SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-echo "***********"
-echo "* TWITTER *"
-echo "***********"
-echo "Installing NPM dependencies..."
+echo "INFO : Installing NPM dependencies..."
 npm install --prefix $THIS_SCRIPT_DIR twitter --save
 
-echo "Launching step script to post status on twitter..."
+echo "INFO : Launching step script to post status on twitter..."
 
-$THIS_SCRIPT_DIR/twitter.js "${wtu_debug_mode}" "${consumer_key}" "${consumer_secret}" "${access_token_secret}" "${access_token_key}" "${screen_name}" "${status}"
-
-exit 0;
+$THIS_SCRIPT_DIR/twitter.js "${tw_debug_mode}" "${tw_consumer_key}" "${tw_consumer_secret}" "${tw_access_token_secret}" "${tw_access_token_key}" "${tw_screen_name}" "${tw_status}"
 
 # If error exit 1
 

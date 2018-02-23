@@ -65,29 +65,29 @@ toolkit:
 
 
 inputs:
-  - consumer_key:
+  - tw_consumer_key:
     opts:
       title: Consumer Key (API Key)
       summary: Your application's Consumer Key and Secret are used to authenticate requests to the Twitter Platform.
       is_required: true
 
-  - consumer_secret:
+  - tw_consumer_secret:
     opts:
       title: Consumer Secret (API Secret)
       is_required: true
  
-  - access_token_secret:
+  - tw_access_token_secret:
     opts:
       title: Access Token Secret
       is_required: true
 
-  - access_token_key:
+  - tw_access_token_key:
     opts:
       title: Access Token
       summary: This access token can be used to make API requests on your own account's behalf. Do not share your access token secret with anyone.
       is_required: true
 
-  - screen_name:
+  - tw_screen_name:
     opts:
       title: Screen name where to post
       summary:
@@ -99,10 +99,22 @@ inputs:
       is_expand: true
       is_required: true
 
-  - status:
+  - tw_status:
     opts:
       title: Text to post on twitter
       summary:
       is_required: true
+
+        # Debug mode desactivated by default
+  - tw_debug_mode: "no"
+    opts:
+      title: "Debug mode ?"
+      description: |
+        Step prints additional debug information if this option
+        is enabled
+      is_required: true
+      value_options:
+        - "yes"
+        - "no"
 
 outputs:
