@@ -14,7 +14,7 @@ app:
   - TW_ACCESS_TOKEN_KEY: "zMwq2MmLckeQ51cGGpG6RYmeVWdcCn7edTi2wHJ1ALtVc"
   - TW_ACCESS_TOKEN_SECRET: "2783726838-djGDWFEaIKKBmVjVpVDQmvd4XfqJ1NNyIGVstXY"
   - TW_SCREEN_NAME: "kawaiseb"
-  - TW_STATUS: "test"
+  - TW_STATUS: "This message will appear on the screen_name account"
 
 workflows:
   test:
@@ -32,8 +32,8 @@ workflows:
         inputs:
         - content: |
             #!/bin/bash
-            echo "Just an example 'secrets' print."
-            echo "The value of 'A_SECRET_PARAM' is: $A_SECRET_PARAM"
+            echo "Step twitter-message..."
+            echo "TW_DEBUG_MODE: $TW_DEBUG_MODE"
 
     - path::./:
         title: Step Test
