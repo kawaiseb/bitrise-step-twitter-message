@@ -11,7 +11,16 @@ This step update the status
 
 https://developer.twitter.com/en/docs/tweets/post-and-engage/api-reference/post-statuses-update
 
+## Inputs variables
+
+![inputs1](docs/twitter-input-variable-1.png)
+![inputs1](docs/twitter-input-variable-2.png)
 
 ## Dependencies
 
 The nodejs script in this step is using npm twitter your can find [here](https://www.npmjs.com/package/twitter).
+
+
+## Credit
+
+![PagesJaunes](docs/pagesjaunes.png)
