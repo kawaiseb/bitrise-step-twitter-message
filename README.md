@@ -1,4 +1,4 @@
-# twitter-message
+# twitter-message step
 
 This step can send message on twitter.
 

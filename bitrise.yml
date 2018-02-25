@@ -8,11 +8,11 @@ app:
   - BITRISE_STEP_GIT_CLONE_URL: https://github.com/kawaiseb/bitrise-step-twitter-message
   - MY_STEPLIB_REPO_FORK_GIT_URL: https://github.com/kawaiseb/bitrise-steplib
 
-  - TW_DEBUG_MODE: 'yes'
+  - TW_DEBUG_MODE: "yes"
   - TW_CONSUMER_KEY: "ctDQvfwI7ppvfGi6o8qLsc9ZN"
   - TW_CONSUMER_SECRET: "vW25CIp9OMbqByNbtKtxkdPGFShUa4ByMGVXIiVPcEdfaJiUg8"
-  - TW_ACCESS_TOKEN_KEY: "2783726838-djGDWFEaIKKBmVjVpVDQmvd4XfqJ1NNyIGVstXY"
-  - TW_ACCESS_TOKEN_SECRET: "zMwq2MmLckeQ51cGGpG6RYmeVWdcCn7edTi2wHJ1ALtVc"
+  - TW_ACCESS_TOKEN_KEY: "zMwq2MmLckeQ51cGGpG6RYmeVWdcCn7edTi2wHJ1ALtVc"
+  - TW_ACCESS_TOKEN_SECRET: "2783726838-djGDWFEaIKKBmVjVpVDQmvd4XfqJ1NNyIGVstXY"
   - TW_SCREEN_NAME: "kawaiseb"
   - TW_STATUS: "test"
 
@@ -38,6 +38,7 @@ workflows:
     - path::./:
         title: Step Test
         inputs:
+        - tw_debug_mode: $TW_DEBUG_MODE
         - tw_consumer_key: $TW_CONSUMER_KEY
         - tw_consumer_secret: $TW_CONSUMER_SECRET
         - tw_access_token_key: $TW_ACCESS_TOKEN_KEY
