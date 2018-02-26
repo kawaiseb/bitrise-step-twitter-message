@@ -7,7 +7,7 @@ description: |
   
   **Use the same credentials as the account you want to update !**
 
-  And get the four important information in your app **Consumer Key (API Key)** / **Consumer Secret (API Secret)** / **Access Token* / **Access Token Secret**
+  And get the four important information in your app : **Consumer Key (API Key)** / **Consumer Secret (API Secret)** / **Access Token* / **Access Token Secret**
 
   Find all the error code list [here](https://developer.twitter.com/en/docs/basics/response-codes)
 
