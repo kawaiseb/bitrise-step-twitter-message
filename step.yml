@@ -39,6 +39,7 @@ inputs:
       title: Consumer Key (API Key)
       description: | 
         Your application's Consumer Key and Secret are used to authenticate requests to the Twitter Platform.
+        
         You will find the key in your [twitter application](https://apps.twitter.com/) inside the *Keys and Access Tokens* section.
       is_required: true
 
@@ -62,6 +63,7 @@ inputs:
       description: |
         This access token can be used to make API requests on your own account's behalf.
         Do not share your access token secret with anyone.
+        
         You will find the key in your [twitter application](https://apps.twitter.com/) inside the *Keys and Access Tokens* section.
       is_required: true
 
