@@ -13,6 +13,8 @@ description: |
   * Access Token
   * Access Token Secret
 
+  Find all the error code list [here](https://developer.twitter.com/en/docs/basics/response-codes)
+  
 website: https://github.com/kawaiseb/bitrise-step-twitter-message
 source_code_url: https://github.com/kawaiseb/bitrise-step-twitter-message
 support_url: https://github.com/kawaiseb/bitrise-step-twitter-message/issues
@@ -40,31 +42,31 @@ inputs:
     opts:
       title: Consumer Key (API Key)
       description: | 
-      Your application's Consumer Key and Secret are used to authenticate requests to the Twitter Platform.
-      You will find the key in your [twitter application](https://apps.twitter.com/) inside the *Keys and Access Tokens* section.
+        Your application's Consumer Key and Secret are used to authenticate requests to the Twitter Platform.
+        You will find the key in your [twitter application](https://apps.twitter.com/) inside the *Keys and Access Tokens* section.
       is_required: true
 
   - tw_consumer_secret:
     opts:
       title: Consumer Secret (API Secret)
       description: |
-      You will find the key in your [twitter application](https://apps.twitter.com/) inside the *Keys and Access Tokens* section.
+        You will find the key in your [twitter application](https://apps.twitter.com/) inside the *Keys and Access Tokens* section.
       is_required: true
  
   - tw_access_token_secret:
     opts:
       title: Access Token Secret
       description: |
-      You will find the key in your [twitter application](https://apps.twitter.com/) inside the *Keys and Access Tokens* section.
+        You will find the key in your [twitter application](https://apps.twitter.com/) inside the *Keys and Access Tokens* section.
       is_required: true
 
   - tw_access_token_key:
     opts:
       title: Access Token
       description: |
-      This access token can be used to make API requests on your own account's behalf.
-      Do not share your access token secret with anyone.
-      You will find the key in your [twitter application](https://apps.twitter.com/) inside the *Keys and Access Tokens* section.
+        This access token can be used to make API requests on your own account's behalf.
+        Do not share your access token secret with anyone.
+        You will find the key in your [twitter application](https://apps.twitter.com/) inside the *Keys and Access Tokens* section.
       is_required: true
 
   - tw_screen_name:
