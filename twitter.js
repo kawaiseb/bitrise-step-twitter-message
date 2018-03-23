@@ -29,11 +29,21 @@ var params = {screen_name: tw_screen_name};
 
 client.post('statuses/update', {status: tw_status},  function(error, tweet, response) {
     if(error) {
-        console.log(error);
-        return 1;
+        if(debug == "yes") {
+            console.log(`ERROR(${error[0].code}) : ${error[0].message}`);
+        }
+        console.log(`ERROR`);
+        return;
     }
 
-    console.log(tweet);  // Tweet body. 
-    console.log(response);  // Raw response object.
+    if(debug == "yes") {
+        console.log("INFO : Displaying the tweet body");
+        console.log(tweet);
+    }   
+
+    if(debug == "yes") {
+        console.log(`INFO : Displaying the raw response object from twitter`);
+        console.log(response);
+    }
  
   });
