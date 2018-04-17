@@ -50,13 +50,6 @@ inputs:
         You will find the key in your [twitter application](https://apps.twitter.com/) inside the *Keys and Access Tokens* section.
       is_required: true
  
-  - tw_access_token_secret:
-    opts:
-      title: Access Token Secret
-      description: |
-        You will find the key in your [twitter application](https://apps.twitter.com/) inside the *Keys and Access Tokens* section.
-      is_required: true
-
   - tw_access_token_key:
     opts:
       title: Access Token
@@ -64,6 +57,13 @@ inputs:
         This access token can be used to make API requests on your own account's behalf.
         Do not share your access token secret with anyone.
         
+        You will find the key in your [twitter application](https://apps.twitter.com/) inside the *Keys and Access Tokens* section.
+      is_required: true
+
+  - tw_access_token_secret:
+    opts:
+      title: Access Token Secret
+      description: |
         You will find the key in your [twitter application](https://apps.twitter.com/) inside the *Keys and Access Tokens* section.
       is_required: true
 

@@ -7,7 +7,7 @@ let tw_consumer_key = process.argv[3];
 let tw_consumer_secret = process.argv[4]; 
 let tw_access_token_key = process.argv[5];
 let tw_access_token_secret = process.argv[6];
-let tw_screen_name = process.argv[7]; //'kawaiseb'
+let tw_screen_name = process.argv[7];
 let tw_status = process.argv[8];
 
 if(debug == null || debug == "" || tw_consumer_key == null  || tw_consumer_key == "" || tw_consumer_secret == null || tw_consumer_secret == "" 
