@@ -8,14 +8,6 @@ app:
   - BITRISE_STEP_GIT_CLONE_URL: https://github.com/kawaiseb/bitrise-step-twitter-message.git
   - MY_STEPLIB_REPO_FORK_GIT_URL: https://github.com/kawaiseb/bitrise-steplib
 
-  - TW_DEBUG_MODE: "yes"
-  - TW_CONSUMER_KEY: ""
-  - TW_CONSUMER_SECRET: ""
-  - TW_ACCESS_TOKEN_SECRET: ""
-  - TW_ACCESS_TOKEN_KEY: ""
-  - TW_SCREEN_NAME: ""
-  - TW_STATUS: "This message is post from the wonderfull twitter-message bitrise step... #bitrise"
-
 workflows:
   test:
     before_run:
